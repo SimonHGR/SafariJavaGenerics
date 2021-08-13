@@ -1,0 +1,22 @@
+simon@Ryzen:~/IdeaProjects/SafariJavaGenerics/src/main/java$ javap -cp classes -c bridge.Parent
+Compiled from "Parent.java"
+public class bridge.Parent implements java.lang.Comparable<bridge.Parent> {
+  public bridge.Parent();
+    Code:
+       0: aload_0
+       1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+       4: return
+
+  public int compareTo(bridge.Parent);
+    Code:
+       0: iconst_0
+       1: ireturn
+
+  public int compareTo(java.lang.Object);
+    Code:
+       0: aload_0
+       1: aload_1
+       2: checkcast     #7                  // class bridge/Parent
+       5: invokevirtual #9                  // Method compareTo:(Lbridge/Parent;)I
+       8: ireturn
+}
