@@ -25,9 +25,6 @@ public class Pair<E> {
     this.right = right;
   }
 
-//  public boolean matches() {
-//    return left.getSize() == right.getSize();
-//  }
   @Override
   public String toString() {
     return "Pair{" +
